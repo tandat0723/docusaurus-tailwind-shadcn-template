@@ -1,0 +1,1 @@
+# docusaurus-tailwind-shadcn-template

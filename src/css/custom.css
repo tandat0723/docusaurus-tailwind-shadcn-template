@@ -223,3 +223,14 @@ div[class^='docItemContainer_'] article img {
     padding: 0 0.5rem 0 2.25rem;
   }
 }
+
+/* HOME PAGE */
+
+.header {
+  @apply px-2 py-20 text-slate-800;
+}
+
+.headerHomepage {
+  @apply text-2xl font-bold md:text-2xl lg:text-4xl text-center;
+}
+

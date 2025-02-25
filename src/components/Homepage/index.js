@@ -6,58 +6,38 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import HomepageFeatures from './Features'
 import LatestNews from '../LatestNews'
 
-import { Button } from '../ui/button'
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext()
+import '../../css/custom.css'
+import Banner from './Features/Banner'
 
-  return (
-    <header
-      className='px-2 py-20 text-center text-slate-800'
-      style={{
-        backgroundImage: `url('/img/banner.jpg')`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
-      }}
-    >
-      <div className='container'>
-        <Heading as='h1' className='mb-4 text-2xl font-bold md:text-3xl lg:text-5xl'>
-          {siteConfig.title}
-        </Heading>
-
-        <p className='mb-4 text-lg md:text-xl lg:text-2xl'>
-          <span className='mb-1 block'>{siteConfig.tagline}</span>
-          <Link
-            href='https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template'
-            className='text-blue-700 dark:text-green-700'
-          >
-            Please read README.md for more about project information
-          </Link>
-        </p>
-
-        <Button asChild>
-          <Link to='/docs/intro' className='hover:text-primary-foreground'>
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </Button>
-      </div>
-    </header>
-  )
-}
+// function HomepageHeader() {
+//   return (
+//     <header
+//       className='header'
+//       style={{
+//         backgroundImage: `url('/img/banner.jpg')`,
+//         backgroundRepeat: 'no-repeat',
+//         backgroundSize: 'cover'
+//       }}
+//     >
+//       <div className='container'>
+//         <Heading as='h1' className='headerHomepage'>
+//           Nhân vật 3D
+//         </Heading>
+//         <div className='mx-16'>
+//           <div>Chào mừng bạn đã đến với mục Profile Nhân Vật trên. Nơi đây sẽ đưa bạn đến với thế giới của những nhân vật hoạt hình đầy màu sắc và cá tính. </div>
+//           <div>Nơi dành cho các bạn muốn tìm hiểu thêm về các nhân vật yêu thích, cũng như khám phá thêm nhiều gương mặt đầy triển vọng trong thế giới hoạt hình.</div>
+//         </div>
+//       </div>
+//     </header>
+//   )
+// }
 
 export default function Home({ homePageBlogMetadata, recentPosts }) {
-  const { siteConfig } = useDocusaurusContext()
-
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description='Description will go into a meta tag in <head />'
-    >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-        <LatestNews recentPosts={recentPosts} homePageBlogMetadata={homePageBlogMetadata} />
-      </main>
+    <Layout>
+      <Banner />
+      <HomepageFeatures />
     </Layout>
   )
 }

@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docusaurus Tailwind Shadcn/ui',
+  title: 'Review Nhân Vật 3D',
   tagline: 'Templates Docusaurus with Tailwind CSS and Shadcn/ui',
   favicon: 'img/favicon.ico',
 
@@ -67,71 +67,76 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Docusaurus Tailwind Shadcn/ui',
+        title: 'Review 3D',
         logo: {
           alt: 'Docusaurus Tailwind Shadcn/ui Logo',
-          src: 'img/logo.svg'
+          src: 'img/logo.png'
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial'
-          },
-          { to: '/blog', label: 'Blog', position: 'left' },
+            position: 'right',
+            label: 'Nhân vật'
+          }, 
           {
-            'href': 'https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template',
-            'position': 'right',
-            'className': 'header-github-link',
-            'aria-label': 'GitHub repository'
-          }
+            to: '/blog',
+            label: 'Cốt truyện',
+            position: 'right'
+          },
+          {
+            to: '/blog',
+            label: 'Tin tức',
+            position: 'right'
+          },
+          // {
+          //   'href': 'https://github.com/namnguyenthanhwork/docusaurus-tailwind-shadcn-template',
+          //   'position': 'right',
+          //   'className': 'header-github-link',
+          //   'aria-label': 'GitHub repository'
+          // }
         ]
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro'
-              }
-            ]
+            title: 'Review nhân vật 3D',
+            // items: [
+            //   {
+            //     label: 'Tutorial',
+            //     to: '/docs/intro'
+            //   }
+            // ]
           },
           {
             title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus'
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus'
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus'
-              }
-            ]
+            // items: [
+            //   {
+            //     label: 'Stack Overflow',
+            //     href: 'https://stackoverflow.com/questions/tagged/docusaurus'
+            //   },
+            // ]
           },
           {
-            title: 'More',
+            title: 'Về chúng tôi',
             items: [
               {
-                label: 'Blog',
-                to: '/blog'
+                label: 'Giới thiệu',
+                to: '#'
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus'
+                label: 'Chính sách và bảo mật',
+                to: '#'
+              },
+              {
+                label: 'Điều khoản và dịch vụ',
+                to: '#'
               }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Docusaurus Tailwind Shadcn. Templates by <a href="https://github.com/namnguyenthanhwork" style="font-weight: bold;" target="_blank">Thành Nam Nguyễn</a>`
+        copyright: `Copyright ©  ${new Date().getFullYear()} <span style= "font-weight: bold">Review nhân vật 3D</span>. Đồng hành bởi <span style= "font-weight: bold">Trần Tấn Đạt</span>`
       },
       prism: {
         theme: prismThemes.github,

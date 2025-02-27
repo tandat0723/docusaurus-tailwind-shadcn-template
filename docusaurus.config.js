@@ -74,11 +74,10 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/',
             position: 'right',
             label: 'Nhân vật'
-          }, 
+          },
           {
             to: '/blog',
             label: 'Cốt truyện',

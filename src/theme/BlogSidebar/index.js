@@ -4,19 +4,21 @@ import BlogSidebarDesktop from '@theme/BlogSidebar/Desktop'
 import BlogSidebarMobile from '@theme/BlogSidebar/Mobile'
 
 export default function BlogSidebar({ sidebar, hideOnDesktop }) {
-  const windowSize = useWindowSize()
+  // const windowSize = useWindowSize()
 
-  if (!sidebar?.items.length) {
-    return null
-  }
-  // Mobile sidebar doesn't need to be server-rendered
-  if (windowSize === 'mobile') {
-    return <BlogSidebarMobile sidebar={sidebar} />
-  }
+  // if (!sidebar?.items.length) {
+  //   return null
+  // }
+  // // Mobile sidebar doesn't need to be server-rendered
+  // if (windowSize === 'mobile') {
+  //   return <BlogSidebarMobile sidebar={sidebar} />
+  // }
 
-  if (hideOnDesktop) {
-    return <></>
-  }
+  // if (hideOnDesktop) {
+  //   return <></>
+  // }
 
-  return <BlogSidebarDesktop sidebar={sidebar} />
+  return (
+    null
+  )
 }
